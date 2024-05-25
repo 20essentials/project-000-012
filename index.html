@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <title>Circular Shortcut Page</title>
+</head>
+<body>
+  <div class="menu">
+    <div class="toggle"><i class="fa-solid fa-plus"></i></div>
+    <li style="--i: 0">
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    </li>
+    <li style="--i: 1">
+      <a href="https://github.com/"><i class="fab fa-github"></i></a>
+    </li>
+    <li style="--i: 2">
+      <a href="https://store.steampowered.com/"><i class="fab fa-steam"></i></a>
+    </li>
+    <li style="--i: 3">
+      <a href="https://open.spotify.com/intl-it"><i class="fab fa-spotify"></i></a>
+    </li>
+    <li style="--i: 4">
+      <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+    </li>
+    <li style="--i: 5">
+      <a href="https://emea.mizuno.com/eu/it-it/home/"><i class="fab fa-mizuni"></i></a>
+    </li>
+    <li style="--i: 6">
+      <a href="https://www.megaport.it/"><i class="fab fa-megaport"></i></a>
+    </li>
+    <li style="--i: 7">
+      <a href="https://circle.so/"><i class="fab fa-gg-circle"></i></a>
+    </li>
+
+  </div>
+
+  <script>
+    console.log("Based in: ->", "https://youtu.be/ShPPkZEeLPo?si=RfyDCHT7X9HElFfK");
+
+    const d = document;
+    let $menu = d.querySelector(".menu"),
+      $toggle = d.querySelector(".toggle");
+    
+    d.addEventListener("click", e => {
+      if (e.target === $toggle) {
+        $menu.classList.toggle("active");
+      }
+    })
+  </script>
+</body>
+</html>
